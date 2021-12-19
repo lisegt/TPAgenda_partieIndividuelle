@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Event.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Agenda - Enoncé</a> &gt; <a href="index.source.html" class="el_package">agenda</a> &gt; <span class="el_source">Event.java</span></div><h1>Event.java</h1><pre class="source lang-java linenums">package agenda;
+
+import java.time.*;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalUnit;
+
+public class Event {
+
+    /**
+     * The myTitle of this event
+     */
+    private String myTitle;
+    
+    /**
+     * The starting time of the event
+     */
+    private LocalDateTime myStart;
+
+    /**
+     * The duration of the event 
+     */
+    private Duration myDuration;
+
+
+    /**
+     * Constructs an event
+     *
+     * @param title the title of this event
+     * @param start the start time of this event
+     * @param duration the duration of this event
+     */
+<span class="fc" id="L32">    public Event(String title, LocalDateTime start, Duration duration) {</span>
+<span class="fc" id="L33">        this.myTitle = title;</span>
+<span class="fc" id="L34">        this.myStart = start;</span>
+<span class="fc" id="L35">        this.myDuration = duration;</span>
+<span class="fc" id="L36">    }</span>
+
+    /**
+     * Tests if an event occurs on a given day
+     *
+     * @param aDay the day to test
+     * @return true if the event occurs on that day, false otherwise
+     */
+    public boolean isInDay(LocalDate aDay) {
+<span class="fc" id="L45">        long dureeMinutes = getDuration().toMinutes();</span>
+<span class="fc" id="L46">        LocalDateTime myEnd = myStart.plus(dureeMinutes, ChronoUnit.MINUTES);</span>
+
+<span class="fc" id="L48">        LocalDate jourFin = myEnd.toLocalDate();</span>
+<span class="fc" id="L49">        LocalDate jourDebut = myStart.toLocalDate();</span>
+
+<span class="pc bpc" id="L51" title="1 of 8 branches missed.">        if (aDay.isBefore(jourFin) &amp;&amp; aDay.isAfter(jourDebut)||aDay.equals(jourDebut) || aDay.equals(jourFin)){</span>
+<span class="fc" id="L52">            return true;</span>
+        }
+<span class="fc" id="L54">        return false;</span>
+        
+    }
+   
+    /**
+     * @return the myTitle
+     */
+    public String getTitle() {
+<span class="nc" id="L62">        return myTitle;</span>
+    }
+
+    /**
+     * @return the myStart
+     */
+    public LocalDateTime getStart() {
+<span class="fc" id="L69">        return myStart;</span>
+    }
+
+    public void setStart(LocalDateTime date){
+<span class="nc" id="L73">        this.myStart = date;</span>
+<span class="nc" id="L74">    }</span>
+
+
+    /**
+     * @return the myDuration
+     */
+    public Duration getDuration() {
+<span class="fc" id="L81">        return myDuration;</span>
+    }
+
+    @Override
+    public String toString() {
+<span class="fc" id="L86">        return &quot;Simple Event : [Intitulé=&quot; + myTitle + &quot;, durée=&quot; + myDuration + &quot;, début=&quot; + myStart +  &quot;]&quot;;</span>
+    }
+
+   
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
