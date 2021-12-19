@@ -36,6 +36,37 @@ import java.util.*;
 <span class="fc" id="L36">        return res;</span>
     }
 
+    /**
+     * Trouver les événements de l'agenda en fonction de leur titre
+     * @param title le titre à rechercher
+     * @return les événements qui ont le même titre
+     */
+    public List&lt;Event&gt; findByTitle(String title) {
+<span class="fc" id="L45">        List&lt;Event&gt; memeTitre = new ArrayList&lt;&gt;();</span>
+<span class="fc bfc" id="L46" title="All 2 branches covered.">        for (Event e : lesEvents){</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">            if (e.getTitle().toLowerCase().equals(title)){</span>
+<span class="fc" id="L48">                memeTitre.add(e);</span>
+            }
+<span class="fc" id="L50">        }   </span>
+<span class="fc" id="L51">        return memeTitre;    </span>
+    }
+    
+    /**
+     * Déterminer s’il y a de la place dans l'agenda pour un événement
+     * @param e L'événement à tester (on se limitera aux événements simples)
+     * @return vrai s’il y a de la place dans l'agenda pour cet événement
+     */
+    public boolean isFreeFor(Event e) {
+<span class="fc bfc" id="L60" title="All 2 branches covered.">        for (Event myEvent : lesEvents){</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">            if (e.getStart().equals(myEvent.getStart()) // les 2 events commencent en même temps</span>
+<span class="fc bfc" id="L62" title="All 4 branches covered.">                || e.getStart().isAfter(myEvent.getStart()) &amp;&amp; e.getStart().isBefore(myEvent.getStart().plus(myEvent.getDuration())) // l'event que l'on teste débute pendant un autre event (avant la fin d'un autre event)</span>
+<span class="pc bpc" id="L63" title="1 of 4 branches missed.">                || e.getStart().isBefore(myEvent.getStart()) &amp;&amp; e.getStart().plus(e.getDuration()).isAfter(myEvent.getStart()) // l'event que l'on teste termine après le début d'un autre event</span>
+                ){
+<span class="fc" id="L65">                    return false;</span>
+                }
+<span class="fc" id="L67">        }</span>
+<span class="fc" id="L68">        return true;       </span>
+    }
    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="agenda.AgendaTest" time="0.036" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="agenda.AgendaTest" time="0.105" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/test-classes:/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/classes:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/lise/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/lise/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="java.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/test-classes:/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/classes:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/lise/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/lise/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
@@ -12,9 +12,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/surefire/surefirebooter13733798886972180024.jar /Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/surefire 2021-12-19T14-30-11_787-jvmRun1 surefire3840187432211357607tmp surefire_04304676446989669063tmp"/>
+    <property name="sun.java.command" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/surefire/surefirebooter3559536442276857393.jar /Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/surefire 2021-12-19T16-04-30_142-jvmRun1 surefire1387423401261466883tmp surefire_07047413091597574198tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/test-classes:/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/classes:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/lise/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/lise/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/test-classes:/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/classes:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/lise/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/lise/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/lise/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/lise/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/lise"/>
     <property name="user.language" value="fr"/>
@@ -22,12 +22,12 @@
     <property name="java.version.date" value="2021-07-20"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-16.0.2.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda"/>
+    <property name="basedir" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda/target/surefire/surefirebooter13733798886972180024.jar"/>
+    <property name="surefire.real.class.path" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle/target/surefire/surefirebooter3559536442276857393.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
     <property name="user.name" value="lise"/>
@@ -40,7 +40,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/mz/9cjfpn_x1_b71kxgs86qqx680000gn/T/"/>
     <property name="java.version" value="16.0.2"/>
-    <property name="user.dir" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda"/>
+    <property name="user.dir" value="/Users/lise/Documents/ISIS/FIE3/S5/GenieLogiciel/TP/TP9-Agenda/TPAgenda_partieIndividuelle"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.library.path" value="/Users/lise/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
@@ -50,5 +50,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="testMultipleEventsInDay" classname="agenda.AgendaTest" time="0.031"/>
+  <testcase name="testAgendaLibre" classname="agenda.AgendaTest" time="0.001"/>
+  <testcase name="testFindByTitle" classname="agenda.AgendaTest" time="0"/>
+  <testcase name="testMultipleEventsInDay" classname="agenda.AgendaTest" time="0.051"/>
 </testsuite>

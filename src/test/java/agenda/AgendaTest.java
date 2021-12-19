@@ -83,7 +83,7 @@ public class AgendaTest {
         //création d'un event qui doit débuter en même temps que le simpleEvent déjà programmé
         Event simpleMemeTemps = new Event("Simple event", nov_1__2020_22_30, min_60);
 
-        //création d'un event qui doit débuter avant la fin du simpleEvent déjà programmé
+        //création d'un event qui doit débuter après le début et avant la fin du simpleEvent déjà programmé
         Event simpleDeb = new Event("Simple event", nov_1__2020_23_30, min_120);
         
         //création d'un event qui doit terminer après le début du simpleEvent déjà programmé
