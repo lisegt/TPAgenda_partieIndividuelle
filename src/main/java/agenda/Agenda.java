@@ -44,7 +44,8 @@ public class Agenda {
     public List<Event> findByTitle(String title) {
         List<Event> memeTitre = new ArrayList<>();
         for (Event e : lesEvents){
-            if (e.getTitle().toLowerCase().equals(title)){
+            //on compare les chaines de caractères en les mettant en minuscules
+            if (e.getTitle().toLowerCase().equals(title.toLowerCase())){
                 memeTitre.add(e);
             }
         }   
@@ -63,7 +64,7 @@ public class Agenda {
                 || e.getStart().isBefore(myEvent.getStart()) && e.getStart().plus(e.getDuration()).isAfter(myEvent.getStart()) // l'event que l'on teste termine après le début d'un autre event
                 ){
                     return false;
-                }
+            }
         }
         return true;       
     }
